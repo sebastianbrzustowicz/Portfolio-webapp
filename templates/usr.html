@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p style="text-align: center;">{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<br>
+    <div class="container top_and_centered">
+        <div class="row">
+            <div class="col-md-9 maxwidth">
+                <divcard class="card card-body h-100 divcard" id="profile-card10" style="border-radius: 15px; background-color: #404040 !important;">
+                    <form  method="post" action="logout"><h4 style="display: inline;">Admin panel ({{user}})</h4><div style="float: right;display: inline;"><input name="logout" type="submit" value="Logout"></div></form> 
+                    
+                    <hr>
+                    <form action="/user/clear" method="post">
+                    <p>Below are the messages received from visitors.<input type="submit" id="clear_all" style="float: right;display: inline;" name="clear_all" value="Clear"></p>
+                    </form>
+
+                    <table>
+                        <tr>
+                          <th style="border-style: solid;border-color: #D6ECF3;">ID</th>
+                          <th style="border-style: solid;border-color: #D6ECF3;">Email</th>
+                          <th style="border-style: solid;border-color: #D6ECF3;">Message</th>
+                        </tr>
+                        {%  for r in range(rows_num):   %}
+                            <tr>
+                                <td style="border-style: solid;border-color: #D6ECF3;">{{data[r][0]}}&nbsp&nbsp&nbsp</td>
+                                <td style="border-style: solid;border-color: #D6ECF3;">{{data[r][1]}}&nbsp&nbsp&nbsp</td>
+                                <td style="overflow-wrap: anywhere;border-style: solid;border-color: #D6ECF3;">{{data[r][2]}}</td>
+                            </tr>
+                        {%  endfor  %}
+                      </table>
+
+                    <br>
+
+                </divcard>
+            </div>
+        </div>
+    </div>
+{% endblock %}

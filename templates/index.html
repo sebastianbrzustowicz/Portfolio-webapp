@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Sebastian Brzustowicz{% endblock %}
+{% block content %}
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for msg in messages %}
+            <p style="text-align: center;">{{msg}}</p>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+<div id="welcometextID" style="color: grey "><h1 style="text-align: center; margin-top: 40vh;">Feel free to take a look at my portfolio :)
+</h1></div>
+{% endblock %}

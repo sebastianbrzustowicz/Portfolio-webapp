@@ -1,0 +1,172 @@
+body{
+    background-color: black !important;
+    zoom: 100%;
+
+}
+
+p{
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+#profile-wrapper{
+    text-align: center;
+}
+
+#profile-pic{
+    max-width:100%;
+    max-height:100%;
+    border-radius: 50%;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_and_centered {
+  min-width: 55vw;
+  position: absolute;
+  left: 1%;
+  right: 1%;
+}
+
+.maxwidth{
+  max-width:75%;
+  max-height:400%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  z-index: 0;
+}
+
+u1{
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-links u1, li{
+    list-style-type:none;
+    display: inline-block;
+    z-index: 2;
+}
+
+.social{
+    width:20px;
+    height:20px;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.img-container2 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.divcard{
+  outline:0px solid lightskyblue; 
+  background-color: #404040 !important;
+  color: white !important;
+}
+
+.divcard:hover {     
+  outline:8px solid lightskyblue;
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+.divcard_animated{
+  outline:0px solid lightskyblue; 
+  background-color: #404040 !important;
+  color: white !important;
+  transition: 0.7s ease;
+}
+
+.divcard_animated:hover {     
+  outline:8px solid lightskyblue;
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+/** Switch
+ -------------------------------------*/
+.containerswitch {
+  position: absolute;
+  top: 17px;
+  right:20px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  opacity: 1;
+}
+
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch {
+  display: inline-block;
+  font-size: 20px; /* 1 */
+  height: 1em;
+  width: 2em;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+}
+
+.switch div {
+  height: 1em;
+  width: 1em;
+  border-radius: 1em;
+  background: black;
+  box-shadow: 0 0.1em 0.3em rgba(0,0,0,0.3);
+
+}
+
+.switch input:checked + div {
+  -webkit-transform: translate3d(100%, 0, 0);
+     -moz-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+          background: white;
+}
+
+/** Switch
+ -------------------------------------*/
+
+.button{
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 2px;
+  border-radius: 25px;
+  transition: 0.7s ease;
+}
+
+.button:hover{
+  background-color: lightskyblue;
+  outline: 8px;
+  cursor: pointer;
+}
+
+.text_input{
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 20px 5px 20px;
+  text-align: left;
+  border-radius: 25px;
+}
