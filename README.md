@@ -2,6 +2,17 @@
 Flask+MySQL. Portfolio webapp for introducing myself. 
 For the application to function properly, you must specify database information.
 
+# Installation
+Basic requirements:
+```
+pip install flask python-dotenv flask_mysqldb flask-bcrypt sqlalchemy
+```
+You can use one of the following connectors to connect to the database (or install both just in case):
+```
+pip install mysql-connector-python
+pip install mysql-connector-python-rf
+```
+# Overview
 Main site "About me":
 ![Zrzut ekranu 2023-10-25 064935](https://github.com/sebastianbrzustowicz/Portfolio-webapp/assets/66909222/3695f0c9-6174-476e-8bf5-2d255c127e00)
 
