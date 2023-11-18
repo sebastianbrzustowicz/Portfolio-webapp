@@ -14,7 +14,7 @@ pip install mysql-connector-python-rf
 ```
 # Overview
 Main site "About me":
-![Zrzut ekranu 2023-10-25 064935](https://github.com/sebastianbrzustowicz/Portfolio-webapp/assets/66909222/3695f0c9-6174-476e-8bf5-2d255c127e00)
+![Zrzut ekranu 2023-11-18 200210](https://github.com/sebastianbrzustowicz/Portfolio-webapp/assets/66909222/2fb4ce9e-3d7d-4eb3-b039-b222f36f2671)
 
 "Hobby":
 ![Zrzut ekranu 2023-10-25 065003](https://github.com/sebastianbrzustowicz/Portfolio-webapp/assets/66909222/71c258ac-1c41-4334-bd26-91509fea5c1b)
